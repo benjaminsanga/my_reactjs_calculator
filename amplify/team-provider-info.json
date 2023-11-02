@@ -17,6 +17,9 @@
           "appId": "dlqu2yax25duk",
           "type": "cicd"
         }
+      },
+      "api": {
+        "myreactjscalculator": {}
       }
     }
   }
