@@ -1,5 +1,5 @@
 import React from 'react';
-import ResultComponent from './ResultComponent';
+import ResultComponent from './components/ResultComponent';
 import './App.css';
 
 function CalcComponent() {

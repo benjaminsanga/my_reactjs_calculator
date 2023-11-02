@@ -1,5 +1,6 @@
 import { useState } from "react";
 import ButtonComponent from "./ButtonComponent";
+import './ResultComponent.css';
 
 function ResultComponent() {
   const [output, setOutput] = useState('');
