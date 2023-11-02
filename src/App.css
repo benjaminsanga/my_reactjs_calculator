@@ -1,38 +1,187 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css?family=Odibee+Sans&display=swap");
+
+#root {
+  --body-bg-color: #e0e5ec;
+  --bg-color: #e0e5ec;
+  --primary-font-color: rgba(144, 152, 168, 1);
+  --secondary-font-color: rgba(51, 64, 89, 1);
+  --soft-high-light: rgba(255, 255, 255, 0.43);
+  --dark-high-light: rgba(217, 210, 200, 0.51);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  background: var(--body-bg-color);
+  color: var(--primary-font-color);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+#root {
+  background: var(--bg-color);
+  color: var(--primary-font-color);
+}
+
+#display {
+  box-shadow: 6px 6px 16px 0 var(--dark-high-light), -6px -6px 16px 0 var(--soft-high-light),
+    inset 6px 6px 5px 0 var(--dark-high-light), inset -6px -6px 5px 0 var(--soft-high-light);
+  border: 5px solid var(--soft-high-light);
+  color: var(--secondary-font-color);
+}
+
+.neumorphic {
+  box-shadow: 6px 6px 16px 0 var(--dark-high-light), -6px -6px 16px 0 var(--soft-high-light);
+  border-radius: 50%;
+  transition: 0.1s all ease-in-out;
+  border: 1px solid var(--soft-high-light);
+  padding: 20px 25px;
+}
+
+.neumorphic:hover {
+  box-shadow: inset 6px 6px 5px 0 var(--dark-high-light), inset -6px -6px 5px 0 var(--soft-high-light);
+  color: var(--secondary-font-color);
+}
+
+body {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-items: center;
+  font-family: "Odibee Sans";
+  font-size: 16px;
 }
 
-.App-link {
-  color: #61dafb;
+#display {
+  border-radius: 12px;
+  transition: 0.1s all ease-in-out;
+  height: 60px;
+  line-height: 60px;
+  text-align: right;
+  padding-right: 20px;
+  width: 100%;
+  font-size: 32px;
+  letter-spacing: 4px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#calculator {
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "display display display display" "clear decimal divide subtract"
+    "seven eight nine times" "four five six add" "one two three equals" "zero zero zero zero";
+  align-items: center;
+  justify-items: center;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  border-radius: 20px;
+  padding: 30px 20px 0 20px;
 }
+
+#clear,
+#decimal,
+#divide,
+#seven,
+#eight,
+#nine,
+#multiply,
+#four,
+#five,
+#six,
+#subtract,
+#one,
+#two,
+#three,
+#add,
+#zero,
+.decimal,
+#equals {
+  text-align: center;
+  height: 60px;
+  width: 60px;
+  line-height: 60px;
+}
+
+#zero {
+  width: 100%;
+  border-radius: 12px;
+}
+
+#display {
+  grid-area: display;
+}
+
+#clear {
+  grid-area: clear;
+}
+
+#decimal {
+  grid-area: decimal;
+}
+
+#seven {
+  grid-area: seven;
+}
+
+#eight {
+  grid-area: eight;
+}
+
+#nine {
+  grid-area: nine;
+}
+
+#multiply {
+  grid-area: times;
+}
+
+#four {
+  grid-area: four;
+}
+
+#five {
+  grid-area: five;
+}
+
+#six {
+  grid-area: six;
+}
+
+#divide {
+  grid-area: divide;
+}
+
+#one {
+  grid-area: one;
+}
+
+#two {
+  grid-area: two;
+}
+
+#three {
+  grid-area: three;
+}
+
+#add {
+  grid-area: add;
+}
+
+#subtract {
+  grid-area: subtract;
+}
+
+#zero {
+  grid-area: zero;
+}
+
+#decimal {
+  grid-area: decimal;
+}
+
+#equals {
+  grid-area: equals;
+}
+
