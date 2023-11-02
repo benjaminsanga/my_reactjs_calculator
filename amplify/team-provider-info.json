@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-myreactjscalculator-dev-171757-authRole",
+      "UnauthRoleArn": "arn:aws:iam::812016960897:role/amplify-myreactjscalculator-dev-171757-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::812016960897:role/amplify-myreactjscalculator-dev-171757-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-myreactjscalculator-dev-171757-deployment",
+      "UnauthRoleName": "amplify-myreactjscalculator-dev-171757-unauthRole",
+      "StackName": "amplify-myreactjscalculator-dev-171757",
+      "StackId": "arn:aws:cloudformation:us-east-1:812016960897:stack/amplify-myreactjscalculator-dev-171757/649ff380-799b-11ee-b45a-0e552cb61243",
+      "AmplifyAppId": "dlqu2yax25duk"
+    }
+  }
+}
