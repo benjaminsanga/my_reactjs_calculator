@@ -10,6 +10,14 @@
       "StackName": "amplify-myreactjscalculator-dev-171757",
       "StackId": "arn:aws:cloudformation:us-east-1:812016960897:stack/amplify-myreactjscalculator-dev-171757/649ff380-799b-11ee-b45a-0e552cb61243",
       "AmplifyAppId": "dlqu2yax25duk"
+    },
+    "categories": {
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "dlqu2yax25duk",
+          "type": "cicd"
+        }
+      }
     }
   }
 }
